@@ -1,0 +1,10 @@
+
+
+body, html {
+height: 100%;
+background-image: url('https://media.giphy.com/media/14lW4AGGJhpk2c/giphy.gif');
+background-position: center 100%;
+background-size: cover;
+background-repeat: repeat;
+background-attachment: fixed;
+}
