@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './Header/Header'
@@ -12,44 +11,21 @@ class App extends Component {
   constructor () {
     super ()
     this.state = {
-      restaurants: [{
-        id: 1,
-        name: "demo 1",
-        type: "Vegan",
-        city: "Denver"
-      },
-      {
-        id: 2,
-        name: "demo 2",
-        type: "Vegetarian",
-        city: "Austin"
-      },
-      {
-        id: 3,
-        name: "demo 3",
-        type: "Paleo",
-        city: "Denver"
-      },
-      {
-        id: 4,
-        name: "demo 4",
-        type: "Vegetarian",
-        city: "Seattle"
-      }],
+      restaurants: [],
       filteredRestaurants: [],
       showNew: false
     }
   }
 
-  filterRestaurants = (city, type) => {
+  filterRestaurants = (city, categories) => {
     const current = [...this.state.restaurants]
-    if (city !== "" && type !== "") {
-      const filteredRestaurants = current.filter((restaurant) => restaurant.type === type && restaurant.city === city)
+    if (city !== "" && categories !== "") {
+      const filteredRestaurants = current.filter((restaurant) => restaurant.categories.split(", ").includes(categories) && restaurant.city === city)
       this.setState({filteredRestaurants})
-    } else if (city === "" && type !== "") {
-      const filteredRestaurants = current.filter((restaurant) => restaurant.type === type)
+    } else if (city === "" && categories !== "") {
+      const filteredRestaurants = current.filter((restaurant) => restaurant.categories.split(", ").includes(categories))
       this.setState({filteredRestaurants})
-    } else if (city !== "" && type === "") {
+    } else if (city !== "" && categories === "") {
       const filteredRestaurants = current.filter((restaurant) => restaurant.city === city)
       this.setState({filteredRestaurants})
     }
@@ -62,12 +38,40 @@ class App extends Component {
     const newRestaurant = {...restaurant, id: Date.now()}
     const restaurants = [...this.state.restaurants, newRestaurant]
     this.setState({restaurants})
-  }
+    const body = restaurant
+    fetch('http://localhost:3000/restaurants', {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+      })
+      .catch(error => (console.error(error.message)))
+    }
+
 
   deleteRestaurant = (id) => {
     const restaurants = this.state.restaurants.filter((restaurant) => restaurant.id !== id)
     const filteredRestaurants = this.state.filteredRestaurants.filter((restaurant) => restaurant.id !== id)
     this.setState({restaurants, filteredRestaurants})
+    const body = id
+    fetch(`http://localhost:3000/restaurants/${id}`, {
+      method: "DELETE",
+      headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body)
+      })
+      .catch(error => (console.error(error.message)))
+  }
+
+
+  componentDidMount () {
+    fetch('http://localhost:3000/restaurants')
+      .then(response => response.json())
+      .then(restaurants => this.setState({
+        restaurants: restaurants,
+        filteredRestaurants: restaurants}))
   }
 
   render () {

@@ -28,15 +28,16 @@ class NewRestaurantForm extends Component {
   }
 
   render () {
-    const { name, type, city } = this.state
+    const { name, categories, city } = this.state
     return (
       <form onSubmit={this.handleSubmit}>
         <input name="name" value={name} placeholder="Restaurant Name" onChange={this.handleChange} />
-          <select name="type" value={type} onChange={this.handleChange}>
-            <option value="">(Select a Type)</option>
+          <select name="categories" value={categories} onChange={this.handleChange}>
+            <option value="">(Select a Category)</option>
             <option value="Vegan">Vegan</option>
             <option value="Vegetarian">Vegetarian</option>
-            <option value="Paleo">Paleo</option>
+            <option value="gluten_free">Gluten Free</option>
+            <option value="juicebars">Juicebars</option>
           </select>
           <select name="city" value={city} onChange={this.handleChange}>
             <option value="">(Select a City)</option>

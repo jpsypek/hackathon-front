@@ -5,7 +5,7 @@ class SearchBar extends Component {
     super(props)
     this.state = {
       city: "",
-      type: ""
+      categories: ""
     }
   }
 
@@ -18,17 +18,18 @@ class SearchBar extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.filterRestaurants(this.state.city, this.state.type)
+    this.props.filterRestaurants(this.state.city, this.state.categories)
   }
 
 
   render () {
+    const {categories, city} = this.state
     return  (
       <div>
         <form onSubmit={this.handleSubmit}>
           <label>
             City
-            <select name="city" value={this.state.city} onChange={this.handleChange}>
+            <select name="city" value={city} onChange={this.handleChange}>
               <option value="">(Select a City)</option>
               <option value="Denver">Denver</option>
               <option value="Seattle">Seattle</option>
@@ -36,12 +37,13 @@ class SearchBar extends Component {
             </select>
           </label>
           <label>
-            Type
-            <select name="type" value={this.state.type} onChange={this.handleChange}>
-              <option value="">(Select a Type)</option>
+            Category
+            <select name="categories" value={categories} onChange={this.handleChange}>
+              <option value="">(Select a Category)</option>
               <option value="Vegan">Vegan</option>
               <option value="Vegetarian">Vegetarian</option>
-              <option value="Paleo">Paleo</option>
+              <option value="gluten_free">Gluten Free</option>
+              <option value="juicebars">Juicebars</option>
             </select>
           </label>
           <button type="submit">Search</button>
