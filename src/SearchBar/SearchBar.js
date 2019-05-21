@@ -40,8 +40,8 @@ class SearchBar extends Component {
             Category
             <select name="categories" value={categories} onChange={this.handleChange}>
               <option value="">(Select a Category)</option>
-              <option value="Vegan">Vegan</option>
-              <option value="Vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="vegetarian">Vegetarian</option>
               <option value="gluten_free">Gluten Free</option>
               <option value="juicebars">Juicebars</option>
             </select>

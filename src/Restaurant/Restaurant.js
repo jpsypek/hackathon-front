@@ -1,9 +1,10 @@
 import React from 'react'
+import './Restaurant.css'
 
 const Restaurant = (props) => {
 
   return (
-    <div>
+    <div class='posts'>
       <h3>Name: {props.name}</h3>
       <h4>Rating: {props.rating}</h4>
       <h4>City: {props.city}</h4>

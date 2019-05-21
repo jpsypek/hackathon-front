@@ -7,7 +7,7 @@ const RestaurantContainer = (props) => {
     return <Restaurant key={restaurant.id} {...restaurant} deleteRestaurant={props.deleteRestaurant} />
   })
   return (
-    <div>
+    <div class='container'>
       {restaurantList}
     </div>
   )

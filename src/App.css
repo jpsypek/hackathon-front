@@ -31,3 +31,186 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ #random{
+   /* BOX MODEL */
+   width: 100%;
+   height: 100%;
+   border: 1px solid black;
+
+   /* ENHANCEMENT */
+   background-image: url('https://media.giphy.com/media/14lW4AGGJhpk2c/giphy.gif');
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ body, html {
+  height: 100%;
+}
+
+
+
+
+/* body {
+  background-image: url("https://media.giphy.com/media/esMcTxGMz3Hhu/giphy.gif");
+  background-position: center; /* Center the image */
+  /* background-repeat: repeat; /* Do not repeat the image */
+/*  background-size: cover; /* Resize the background image to cover the entire container */
+/*background-color: #cccccc; */
+/* } */
+
+ a:link {
+   color: aqua;
+   text-decoration: none;
+ }
+
+ a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+#posts {
+font-family: Arial, Helvetica, sans-serif;
+ font-size: 30px;
+ letter-spacing: 2px;
+ word-spacing: 2px;
+ color: #000000;
+ font-weight: 700;
+ text-decoration: none;
+ font-style: normal;
+ font-variant: normal;
+ text-transform: none;
+ text-align: center;
+color: rgb(19, 19, 19);
+/* background: rgb(231, 229, 228); */
+letter-spacing: 0.15em;
+text-shadow: rgb(118, 118, 118) 1px -1px 0px, rgb(115, 114, 114) -1px 2px 1px, rgb(118, 116, 116) -2px 4px 1px, rgb(120, 119, 119) -3px 6px 1px, rgb(123, 122, 122) -4px 8px 1px, rgb(127, 125, 125) -5px 10px 1px, rgb(130, 129, 129) -6px 12px 1px, rgb(134, 133, 133) -7px 14px 1px, rgb(139, 138, 137) -8px 16px 1px, rgb(143, 142, 141) -9px 18px 1px, rgb(148, 147, 146) -10px 20px 1px, rgb(153, 152, 151) -11px 22px 1px, rgb(158, 156, 156) -12px 24px 1px, rgb(163, 161, 161) -13px 26px 1px, rgb(168, 166, 166) -14px 28px 1px, rgb(173, 171, 171) -15px 30px 1px, rgb(178, 177, 176) -16px 32px 1px, rgb(183, 182, 181) -17px 34px 1px, rgb(188, 187, 186) -18px 36px 1px, rgb(193, 191, 191) -19px 38px 1px, rgb(198, 196, 196) -20px 40px 1px, rgb(203, 201, 200) -21px 42px 1px, rgb(207, 205, 205) -22px 44px 1px, rgb(212, 210, 209) -23px 46px 1px, rgb(216, 214, 213) -24px 48px 1px, rgb(219, 218, 217) -25px 50px 1px, rgb(223, 221, 220) -26px 52px 1px, rgb(226, 224, 223) -27px 54px 1px, rgb(228, 227, 226) -28px 56px 1px;
+--darkreader-inline-color:#e1dfdb;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#202223;
+}
+
+#title {
+  font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   letter-spacing: 5px;
+   word-spacing: 2px;
+   color: #000000;
+   font-weight: 700;
+   text-decoration: none;
+   font-style: normal;
+   font-variant: normal;
+   text-transform: none;
+   text-align: center;
+color: pink;
+opacity: 0.8;
+/*background: rgb(255, 255, 255);*/
+text-shadow: rgba(179, 179, 179, 0.4) -4px 4px, rgba(153, 153, 153, 0.2) -3px 3px, rgba(179, 179, 179, 0.2) -2px 2px, rgba(179, 179, 179, 0.2) -1px 1px, rgba(128, 128, 128, 0.5) 0px 0px, rgba(77, 77, 77, 0.6) 1px -1px, rgba(77, 77, 77, 0.7) 2px -2px, rgba(82, 82, 82, 0.8) 3px -3px, rgba(77, 77, 77, 0.9) 4px -4px, rgb(77, 77, 77) 5px -5px;
+--darkreader-inline-color:transparent;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#181a1b;
+}
+
+input {
+  width: 70%;
+}
+
+textarea {
+  width: 70%;
+  height: 50px;
+/*  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none; */
+}
+
+form {
+    display: block;
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+#form {
+  padding: 1em 0px 3em 0px;
+  display: block;
+  margin-left: 8em;
+  margin-right: 8em;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 6px 15px 5px rgba(0,0,0,0);
+  box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 6px 15px 5px rgba(0,0,0,0);
+}
+
+#content{
+
+    -moz-transform: translate(0px, 49px);
+    -webkit-transform: translate(0px, 49px);
+    -o-transform: translate(0px, 49px);
+    -ms-transform: translate(0px, 49px);
+    transform: translate(0px, 49px);
+      }
+
+      #blogtext {
+        font-family: Arial, Helvetica, sans-serif;
+         font-size: 50px;
+         letter-spacing: 2px;
+         word-spacing: 2px;
+         color: #000000;
+         font-weight: 700;
+         text-decoration: none;
+         font-style: normal;
+         font-variant: normal;
+         text-transform: none;
+         text-align: center;
+        color: rgb(188, 46, 30);
+        text-shadow: rgb(55, 138, 180) 0px 1px 0px, rgb(93, 171, 205) 1px 0px 0px, rgb(55, 138, 180) 1px 2px 1px, rgb(93, 171, 205) 2px 1px 1px, rgb(55, 138, 180) 2px 3px 2px, rgb(93, 171, 205) 3px 2px 2px, rgb(55, 138, 180) 3px 4px 2px, rgb(93, 171, 205) 4px 3px 3px, rgb(55, 138, 180) 4px 5px 3px, rgb(93, 171, 205) 5px 4px 2px, rgb(55, 138, 180) 5px 6px 2px, rgb(93, 171, 205) 6px 5px 2px, rgb(55, 138, 180) 6px 7px 1px, rgb(93, 171, 205) 7px 6px 1px, rgb(55, 138, 180) 7px 8px 0px, rgb(93, 171, 205) 8px 7px 0px;
+        --darkreader-inline-color:#e8796d;
+        --darkreader-inline-bgimage: initial;
+        --darkreader-inline-bgcolor:#5d4f11;
+    }
+
+#footertext {
+  font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   letter-spacing: 2px;
+   word-spacing: 2px;
+   color: #000000;
+   font-weight: 700;
+   text-decoration: none;
+   font-style: normal;
+   font-variant: normal;
+   text-transform: none;
+   text-align: center;
+color: rgb(255, 255, 255);
+text-shadow: rgb(0, 230, 230) -5px 5px 0px, rgb(1, 204, 204) -10px 10px 0px, rgb(0, 189, 189) -15px 15px 0px;
+--darkreader-inline-color:#ffffff;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#004acc;
+}

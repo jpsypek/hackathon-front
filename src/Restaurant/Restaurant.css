@@ -1,0 +1,30 @@
+.posts {
+font-family: Arial, Helvetica, sans-serif;
+ font-size: 30px;
+ letter-spacing: 2px;
+ word-spacing: 2px;
+ color: #000000;
+ font-weight: 700;
+ text-decoration: none;
+ font-style: normal;
+ font-variant: normal;
+ text-transform: none;
+ text-align: center;
+color: rgb(19, 19, 19);
+/* background: rgb(231, 229, 228); */
+letter-spacing: 0.15em;
+text-shadow: rgb(118, 118, 118) 1px -1px 0px, rgb(115, 114, 114) -1px 2px 1px, rgb(118, 116, 116) -2px 4px 1px, rgb(120, 119, 119) -3px 6px 1px, rgb(123, 122, 122) -4px 8px 1px, rgb(127, 125, 125) -5px 10px 1px, rgb(130, 129, 129) -6px 12px 1px, rgb(134, 133, 133) -7px 14px 1px, rgb(139, 138, 137) -8px 16px 1px, rgb(143, 142, 141) -9px 18px 1px, rgb(148, 147, 146) -10px 20px 1px, rgb(153, 152, 151) -11px 22px 1px, rgb(158, 156, 156) -12px 24px 1px, rgb(163, 161, 161) -13px 26px 1px, rgb(168, 166, 166) -14px 28px 1px, rgb(173, 171, 171) -15px 30px 1px, rgb(178, 177, 176) -16px 32px 1px, rgb(183, 182, 181) -17px 34px 1px, rgb(188, 187, 186) -18px 36px 1px, rgb(193, 191, 191) -19px 38px 1px, rgb(198, 196, 196) -20px 40px 1px, rgb(203, 201, 200) -21px 42px 1px, rgb(207, 205, 205) -22px 44px 1px, rgb(212, 210, 209) -23px 46px 1px, rgb(216, 214, 213) -24px 48px 1px, rgb(219, 218, 217) -25px 50px 1px, rgb(223, 221, 220) -26px 52px 1px, rgb(226, 224, 223) -27px 54px 1px, rgb(228, 227, 226) -28px 56px 1px;
+--darkreader-inline-color:#e1dfdb;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#202223;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    justify-items: stretch;
+    align-items: stretch;
+ }
