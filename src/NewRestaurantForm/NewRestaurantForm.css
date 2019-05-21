@@ -1,0 +1,11 @@
+
+
+
+button{
+  justify: center;
+  margin: 17px auto 30px auto;
+  display: flex;
+  justify-content: center;
+  align: center;
+  opacity: 1;
+}

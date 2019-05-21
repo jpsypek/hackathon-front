@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './App.css';
 
 import Header from './Header/Header'
@@ -6,6 +7,8 @@ import Footer from './Footer/Footer'
 import SearchBar from './SearchBar/SearchBar'
 import RestaurantContainer from './RestaurantContainer/RestaurantContainer'
 import NewRestaurantForm from './NewRestaurantForm/NewRestaurantForm'
+import Audio from './Audio/Audio.js'
+import ReactSoundcloud from './Audio/Audio.js';
 
 class App extends Component {
   constructor () {
@@ -79,14 +82,17 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
+
         <SearchBar restaurants={restaurants} filterRestaurants={this.filterRestaurants}/>
-        <button onClick={this.showNewForm}>Add a New Restaurant</button>
+        <button className='search' onClick={this.showNewForm}>Add a New Restaurant</button>
         {this.state.showNew ? <NewRestaurantForm addRestaurant={this.addRestaurant}/> : null}
         <RestaurantContainer  deleteRestaurant={this.deleteRestaurant} restaurants={filteredRestaurants}/>
         <Footer />
+        <ReactSoundcloud url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/264844041&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=true&visual=true"/>
       </React.Fragment>
     )
   }
 }
+
 
 export default App;

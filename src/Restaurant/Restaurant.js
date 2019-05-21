@@ -4,11 +4,11 @@ import './Restaurant.css'
 const Restaurant = (props) => {
 
   return (
-    <div class='posts'>
-      <h3>Name: {props.name}</h3>
-      <h4>Rating: {props.rating}</h4>
-      <h4>City: {props.city}</h4>
-      <p>Categories: {props.categories}</p>
+    <div class='text'>
+      <h3 class='blogtext'>{props.name}</h3>
+      <h4 class='footertext'> Rating of {props.rating} stars!!!</h4>
+      <h4 class='footertext'>{props.city}</h4>
+      <p class='content'> {props.categories}</p>
       <button onClick={() => props.deleteRestaurant(props.id)}>Delete</button>
     </div>
   )

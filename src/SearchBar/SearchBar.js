@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SearchBar.css'
 
 class SearchBar extends Component {
   constructor (props) {
@@ -25,10 +26,11 @@ class SearchBar extends Component {
   render () {
     const {categories, city} = this.state
     return  (
-      <div>
+      <div class = 'search'>
+        <p class ='ptitle'><img src="https://web.archive.org/web/20090731084353if_/http://hk.geocities.com/food_linkhk/10.gif" />~ Look For a Healthy Restaurant Near You! ^_^ ~<img src="https://web.archive.org/web/20090803100009if_/http://hk.geocities.com/ndhufood/images/cute03/02.gif"/></p>
         <form onSubmit={this.handleSubmit}>
           <label>
-            City
+            <p>City</p>
             <select name="city" value={city} onChange={this.handleChange}>
               <option value="">(Select a City)</option>
               <option value="Denver">Denver</option>
@@ -37,7 +39,7 @@ class SearchBar extends Component {
             </select>
           </label>
           <label>
-            Category
+            <p>Category</p>
             <select name="categories" value={categories} onChange={this.handleChange}>
               <option value="">(Select a Category)</option>
               <option value="vegan">Vegan</option>

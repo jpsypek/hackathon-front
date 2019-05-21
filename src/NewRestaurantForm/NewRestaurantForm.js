@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './NewRestaurantForm.css'
 
 class NewRestaurantForm extends Component {
   constructor (props) {
@@ -30,6 +31,7 @@ class NewRestaurantForm extends Component {
   render () {
     const { name, categories, city } = this.state
     return (
+      <div class = 'search'>
       <form onSubmit={this.handleSubmit}>
         <input name="name" value={name} placeholder="Restaurant Name" onChange={this.handleChange} />
           <select name="categories" value={categories} onChange={this.handleChange}>
@@ -45,8 +47,10 @@ class NewRestaurantForm extends Component {
             <option value="Seattle">Seattle</option>
             <option value="Austin">Austin</option>
           </select>
+          <br></br>
         <button type="submit">Add new restaurant</button>
       </form>
+      </div>
     )
   }
 }

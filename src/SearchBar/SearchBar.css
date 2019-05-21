@@ -1,0 +1,33 @@
+.search{
+
+   padding: 0.3em 5px 1em 5px;
+   display: flex;
+flex-wrap: wrap;
+  display: block;
+  /* margin-left: 20em;
+  margin-right: 20em; */
+  text-align: center;
+  background-color: orange;
+  opacity: 0.7;
+  -webkit-box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 6px 15px 5px rgba(0,0,0,0);
+  box-shadow: rgb(255, 128, 128) 5px 5px 15px 5px, rgb(255, 228, 136) -9px 5px 15px 5px, rgb(140, 255, 133) -7px -5px 15px 5px, rgb(128, 199, 255) 12px -5px 15px 5px, rgb(228, 136, 255) 12px 10px 15px 7px, rgb(255, 97, 107) -10px 10px 15px 7px, rgb(142, 92, 255) -10px -7px 27px 1px, 5px 6px 15px 5px rgba(0,0,0,0);
+
+      }
+
+.ptitle {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+color: rgb(255, 255, 255);
+text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px, rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px, rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+--darkreader-inline-color:#ffffff;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#303336;
+}

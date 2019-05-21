@@ -19,12 +19,56 @@ text-shadow: rgb(118, 118, 118) 1px -1px 0px, rgb(115, 114, 114) -1px 2px 1px, r
 --darkreader-inline-bgcolor:#202223;
 }
 
+.footertext {
+  font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   letter-spacing: 2px;
+   word-spacing: 2px;
+   color: #000000;
+   font-weight: 700;
+   text-decoration: none;
+   font-style: normal;
+   font-variant: normal;
+   text-transform: none;
+   text-align: center;
+color: rgb(255, 255, 255);
+text-shadow: rgb(0, 230, 230) -5px 5px 0px, rgb(1, 204, 204) -10px 10px 0px, rgb(0, 189, 189) -15px 15px 0px;
+--darkreader-inline-color:#ffffff;
+--darkreader-inline-bgimage: initial;
+--darkreader-inline-bgcolor:#004acc;
+}
+
+
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    grid-column-gap: 5%;
-    grid-row-gap: 5%;
-    justify-items: stretch;
-    align-items: stretch;
+    grid-column-gap: 0px;
+    grid-row-gap:50px;
+    justify-items: auto;
+    text-align: center;
+    align-items: auto;
+    -webkit-box-shadow: rgb(75, 0, 130) 7px -5px 10px 0px, rgb(0, 0, 255) 11px -9px 10px 0px, rgb(0, 255, 0) 16px -14px 10px 0px, rgb(255, 255, 0) 20px -17px 10px 0px, rgb(255, 127, 0) 24px -19px 10px 0px, rgb(255, 0, 0) 27px -23px 10px 0px, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: rgb(75, 0, 130) 7px -5px 10px 0px, rgb(0, 0, 255) 11px -9px 10px 0px, rgb(0, 255, 0) 16px -14px 10px 0px, rgb(255, 255, 0) 20px -17px 10px 0px, rgb(255, 127, 0) 24px -19px 10px 0px, rgb(255, 0, 0) 27px -23px 10px 0px, 5px 5px 15px 5px rgba(0,0,0,0);
+    background: #A41F78;
+opacity:0.7;
  }
+
+.blogtext {
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+   color: rgb(188, 46, 30);
+   text-shadow: rgb(55, 138, 180) 0px 1px 0px, rgb(93, 171, 205) 1px 0px 0px, rgb(55, 138, 180) 1px 2px 1px, rgb(93, 171, 205) 2px 1px 1px, rgb(55, 138, 180) 2px 3px 2px, rgb(93, 171, 205) 3px 2px 2px, rgb(55, 138, 180) 3px 4px 2px, rgb(93, 171, 205) 4px 3px 3px, rgb(55, 138, 180) 4px 5px 3px, rgb(93, 171, 205) 5px 4px 2px, rgb(55, 138, 180) 5px 6px 2px, rgb(93, 171, 205) 6px 5px 2px, rgb(55, 138, 180) 6px 7px 1px, rgb(93, 171, 205) 7px 6px 1px, rgb(55, 138, 180) 7px 8px 0px, rgb(93, 171, 205) 8px 7px 0px;
+   --darkreader-inline-color:#e8796d;
+   --darkreader-inline-bgimage: initial;
+   --darkreader-inline-bgcolor:#5d4f11;
+}
